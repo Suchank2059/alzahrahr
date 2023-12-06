@@ -8,6 +8,6 @@ class Clients extends Component
 {
     public function render()
     {
-        return view('livewire.clients');
+        return view('livewire.UsersView.clients');
     }
 }
