@@ -1,5 +1,5 @@
 <div>
-    <nav>
+    <nav class="bg-blue-500 text-white p-4">
         <a href="/" wire:navigate>Home</a>
         <a href="/about-us" wire:navigate>About</a>
         <a href="/services" wire:navigate>Services</a>
