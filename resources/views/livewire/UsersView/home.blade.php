@@ -1,148 +1,126 @@
 <div>
-<body class="w-screen h-screen">
-    <div class="w-screen flex items-center justify-center font-serif text-emerald-900">
-        <img class="mr-4" src="image/logo%20zahra.png">
-        <div class="leading-3">
-            <h1 class="text-4xl">Al Zahara</h1>
-            <p class="flex justify-center">Human Resources Consulttancy</p>
-        </div>
-    </div>
-    <div class="border-b border-green-200-200 w-screen  my-4"></div>
-    <livewire:navigation />    <div class="flex items-center justify-center">
-        <div class="relative overflow-hidden w-full">
-            <div class="carousel" id="myCarousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item relative">
-                        <img src="image/cr3.png" alt="Slide 1">
-                        <div class="absolute top-2  text-white w-screen flex justify-center items-center">
-                            <p class="text-base flex justify-center" >Our offices</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item relative">
-                        <img src="image/cr2.png" alt="Slide 2">
-                        <div class="absolute top-2  text-white w-screen flex justify-center items-center">
-                            <p class="text-base flex justify-center" >Our offices</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item relative">
-                        <img src="image/cr1.png" alt="Slide 3">
-                        <div class="absolute top-2  text-white w-screen flex justify-center items-center">
-                            <p class="text-base flex justify-center" >Our offices</p>
-                        </div>
+    <livewire:navigation/>
+       <livewire:web-livewire/>
+    <section class="hero bg-grey py-18  xl:pt-24 xl:pb-0 overflow-hidden">
+        <div class="container mx-auto h-full">
+            <div class="flex flex-col xl:flex-row items-center justify-between  h-full">
+                <div class="hero__text lg:w-[48%] text-center xl:text-left">
+                    <h1 class="font-bold text-[35px] mb-6">WELCOME</h1>
+                    <p class="md:max-w-xl">We Alzaharahr Overseas Pvt. Ltd with government of Nepal license no 817/066/067 based in Kathmandu, Nepal, are happy to introduce ourselves and delighted to know about your esteemed organization. We have been achieving success and profitability in providing manpower needs for our clients in UAE, Malaysia, Qatar, Bahrain, Saudi Arabia and other Gulf countries and Europe.</p>
+                    <button class="text-accent"><a href="/about-us" wire:navigate>Read More</a></button>
+                    <button class="btn btn-lg btn-accent mt-8"><a href="/contacts" wire:navigate>Contact Us</a></button>
+
+                </div>
+                    <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                        <img src="image/img.png" alt="error loading photo " class="w-full">
                     </div>
                 </div>
-                <a href="#" class="absolute top-1/2 left-8  -translate-y-1/2 bg-gradient-to-r from-emerald-500 to-emerald-700 hover:from-emerald-700 hover:to-emerald-900 text-white font-bold py-1 px-4 rounded-full transition-transform transform hover:scale-105 focus:outline-none focus:ring focus:border-emerald-700 opacity-40">
-                    Nepal
-                </a>
-
-                <button class="absolute top-1/2 right-8  -translate-y-1/2 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-900 text-white font-bold py-1 px-4 rounded-full transition-transform transform hover:scale-105 focus:outline-none focus:ring focus:border-blue-700 opacity-40">
-                    Dubai
-                </button>
-                <button class="absolute top-1/2 transform -translate-y-1/2 left-2 carousel-control prev text-blue-50 hover:text-emerald-700" onclick="prevSlide()">&#10094;</button>
-                <button class="absolute top-1/2 transform -translate-y-1/2 right-2 carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
+    </section>
+    <section class="stats section">
+        <div class="container mx-auto">
+            <div class="flex flex-col xl:flex-row gap-y-6">
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[32px] font-semibold text-accent-tertiary xl:mb-2">
+                        +12000
+                    </div>
+                    <div class="mb-2">
+                        Happy Employees
+                    </div>
+                </div>
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[32px] font-semibold text-accent-tertiary xl:mb-2">
+                        2
+                    </div>
+                    <div class="mb-2">
+                        Total Branches
+                    </div>
+                </div>
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[32px] font-semibold text-accent-tertiary xl:mb-2">
+                        +12
+                    </div>
+                    <div class="mb-2">
+                        Years of Experience
+                    </div>
+                </div>
+                <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
+                    <div class="text-4xl xl:text-[32px] font-semibold text-accent-tertiary xl:mb-2">
+                        +50
+                    </div>
+                    <div class="mb-2">
+                        Consultants
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="flex w-screen h-1/4">
-        <div class="px-3 py-4 w-1/2 bg-emerald-950 opacity-70 flex justify-center items-center text-lime-50">
-            About US
+    </section>
+    <section class="services flex justify-center mb-6">
+        <div class="bg-white rounded-3xl shadow-custom2 w-[80%] flex ">
+            <div class="container mx-auto">
+                <div class="services__top  items-center   xl:mb-[60px]">
+                    <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center  py-4">
+                        Our Current Vaciencies
+                    </h2>
+                    <div class="flex flex-col text-[12px] xl:flex-row py-4">
+                        <div class="stats__item flex-1 border-r-2 border-l-2 flex flex-col xl:flex items-center">
+                            <div class="text-xl text-accent  font-light  xl:mb-2">
+                                Job Title :House Keeping
+                            </div>
+                            <div class="mb-2 xl:text-2xl font-light text-accent">
+                                No of Vacancies : 5
+                            </div>
+                        </div>
+                        <div class="stats__item flex-1 border-l-2 border-r-2 flex flex-col xl:flex items-center">
+                            <div class="text-2xl text-accent  font-light  xl:mb-2">
+                                Job Title :House Keeping
+                            </div>
+                            <div class="mb-2 xl:text-2xl font-light text-accent">
+                                No of Vacancies : 5
+                            </div>
+                        </div>
+                        <div class="stats__item flex-1  border-l-2 border-r flex flex-col xl:flex items-center">
+                            <div class="text-2xl text-accent  font-light  xl:mb-2">
+                                Job Title :House Keeping
+                            </div>
+                            <div class="mb-2 xl:text-2xl font-light text-accent">
+                                No of Vacancies : 5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats__item flex-1  flex flex-col xl:flex items-center cursor-pointer">
+                        <a href="/vacancies" wire:navigate>
+                            <p class="text-accent">read more...</p>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="px-3 py-4  text-[11px] w-1/2 bg-gray-50  justify-center">
-            <p>Get to Know Us
-                Al Zahra Human Resource Consultancy was established in 2001 by Mr Abbas Mohammed </p>
-            <a><h5 class="text-blue-900">read more</h5></a>
-        </div>
-    </div>
-    <div class="flex  w-screen h-1/4">
-        <div class="w-1/2">
-            <img class="object-cover h-full" src="image/landing.png">
-        </div>
-        <div class="w-1/2 text-[11px] bg-emerald-950 opacity-70 text-lime-50">
-            <ul>
-                <li class=" relative before:content-['\2605'] font-bold before:text-[14px] text-[14px] px-3">Recruitment services</li>
-                <p class=" px-4">Creating recruitment strategies and hiring the right talent, both in the UAE and abroad.</p>
-                <li class=" relative before:content-['\2605'] font-bold before:text-[14px] text-[14px] px-3">Recruitment services</li>
-                <p class=" px-4">Creating recruitment strategies and hiring the right talent, both in the UAE and abroad.</p>
-                <li class=" relative before:content-['\2605'] font-bold before:text-[14px] text-[14px] px-3">Recruitment services</li>
-                <p class=" px-4">Creating recruitment strategies and hiring the right talent, both in the UAE and abroad.</p>
-            </ul>
-        </div>
-    </div>
-    <div class="h-20 w-screen  flex px-4">
-        <h1 class="text-[18px] flex justify-center items-center px-3 mr-4">Clients</h1>
-        <img src="image/client1.webp" alt="error" class="flex justify-center items-center w-1/4 h-3/4" >
-        <img src="image/trojanlogo_edited_edited.webp" alt="error" class="flex justify-center items-center w-1/4 h-3/4">
-        <img src="image/client3.webp" alt="error" class="flex justify-center items-center w-1/4 h-3/4">
-    </div>
-    <div class="h-28 text-white w-screen bg-emerald-950 opacity-70 px-14 flex text-[7px]">
-        <div class="w-1/3">
-            <h3>Address :</h3>
-            <h4>Dubai :</h4>
-            <p>Prime Tower, Business Bay, Dubai United Arab Emirates
-                P.O. Box: 111591, Dubai, UAE</p>
-            <h4>Nepal :</h4>
-            <p>Bhimsengola, Kathmamandu, Bagmati
-                P.O. Box: 111591, Kathmandu, NEPAL</p>
+    </section>
+    <section class="teamThought w-screen">
+        <section class="hero bg-grey py-18  xl:pt-24 xl:pb-0 overflow-hidden">
+            <div class="container mx-auto h-full">
+                <div class="flex flex-col xl:flex-row items-center justify-between  h-full">
+                    <div class="w-[50%]">
+                        <img src="image/ceo.jpg" alt="error loding photo " class="object-cover">
+                    </div>
+                    <div class="hero__text lg:w-[48%] text-center xl:text-left ">
+                        <h1 class="font-bold text-[35px] border-r-2">Kshitiz Dhungana</h1>
+                        <p class="text-secondary mb-6 ">Chairman</p>
+                        <p class="md:max-w-xl">I make sure you get the best experience working with us.
+                            Bringing together the organization needing such workers for
+                            better productions and the pool of goods skilled, unskilled
+                            workers and this gap has been successfully bridged by the
+                            services provided by S.P.M Overseas Pvt. Ltd.</p>
+                        <button class="btn btn-lg btn-accent mt-8 ml-20"><a href="#">Contact Me</a></button>
 
-        </div>
-        <div class="w-1/3">
-            <h3> Contact Us</h3>
-            <p>+977 15648454
-            inf0@nkgsk@mail.com
-            kanfk;snfk;@fsadf.com</p>
-        </div>
-        <div class="w-1/3">
+                    </div>
 
-        </div>
-    </div>
-
-    <div class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            <p class="text-sm">&copy; 2023 Your Company. All rights reserved.</p>
-        </div>
-    </div>
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-item');
-
-        function showSlide(n) {
-            if (n >= slides.length) {
-                currentSlide = 0;
-            } else if (n < 0) {
-                currentSlide = slides.length - 1;
-            } else {
-                currentSlide = n;
-            }
-
-            slides.forEach((slide, index) => {
-                if (index === currentSlide) {
-                    slide.style.display = 'block';
-                } else {
-                    slide.style.display = 'none';
-                }
-            });
-        }
-
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-
-        function autoSlide() {
-            nextSlide();
-        }
-
-        setInterval(autoSlide, 3000); // Change 3000 to the desired interval in milliseconds
-
-        document.addEventListener('DOMContentLoaded', function () {
-            showSlide(currentSlide);
-        });
-    </script>
-
-</body>
-</html>
+                </div>
+            </div>
+        </section>
+        <livewire:footer/>
 </div>
 
