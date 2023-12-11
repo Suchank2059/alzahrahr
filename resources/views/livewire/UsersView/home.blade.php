@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="border-b border-green-200-200 w-screen  my-4"></div>
-    <livewire:navigation />\    <div class="flex items-center justify-center">
+    <livewire:navigation />    <div class="flex items-center justify-center">
         <div class="relative overflow-hidden w-full">
             <div class="carousel" id="myCarousel">
                 <div class="carousel-inner">
