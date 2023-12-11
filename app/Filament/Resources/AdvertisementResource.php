@@ -43,7 +43,9 @@ class AdvertisementResource extends Resource
                             ->numeric()
                             ->inputMode('decimal'),
                         TextInput::make('minimun_qualification')->required(),
-                        RichEditor::make('job_description')->required(),
+                        Textarea::make('job_description')
+                            ->helperText('Enter each point on a new line. It will be displayed as a bulleted list.')
+                            ->required(),
                         SpatieMediaLibraryFileUpload::make('image'),
                     ])
             ]);
@@ -60,7 +62,7 @@ class AdvertisementResource extends Resource
                 TextColumn::make('female_required'),
                 TextColumn::make('minimun_qualification'),
                 TextColumn::make('job_description')->limit(20)->markdown(),
-                SpatieMediaLibraryImageColumn::make('image')->circular()
+                SpatieMediaLibraryImageColumn::make('image')
             ])
             ->filters([
                 //
