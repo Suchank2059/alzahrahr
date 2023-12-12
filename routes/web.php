@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\AboutUs;
+use App\Livewire\ApplyNow;
 use App\Livewire\Clients;
 use App\Livewire\Contacts;
 use App\Livewire\Home;
@@ -15,3 +16,4 @@ Route::get('/services', Services::class);
 Route::get('/clients', Clients::class);
 Route::get('/contacts', Contacts::class);
 Route::get('/vacancies', Vacency::class);
+Route::get('/apply-now', ApplyNow::class);
