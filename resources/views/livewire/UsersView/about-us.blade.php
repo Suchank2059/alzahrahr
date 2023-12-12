@@ -1,4 +1,4 @@
 <div>
-    <h1>This is About us page</h1>
     <livewire:navigation />
+    <h2>About Us</h2>
 </div>
