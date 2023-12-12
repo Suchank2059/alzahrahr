@@ -7,7 +7,6 @@
 
     <title>{{ $title ?? 'Alzahara' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-{{--    @extends('laravelmddrawer::app')--}}
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

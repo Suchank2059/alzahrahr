@@ -21,7 +21,6 @@ class Home extends Component
 
     private function getJobs()
     {
-        // Fetch only 3 instances of jobs
         $ads = Advertisement::take(3)->get();
 
         return $ads;
