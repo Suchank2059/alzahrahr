@@ -13,7 +13,7 @@
                     </i>
                 </div>
                 <div class="flex justify-center items-center gap-x-2 lg:justify-normal text-secondary"><i class="fa fa-phone">+977 9812345678</i></div>
-                <button class=" btn btn-sm btn-outline mt-3 lg:w-auto mx-auto lg:mx-0">Apply now</button>
+                <button class=" btn btn-sm btn-outline mt-3 lg:w-auto mx-auto lg:mx-0"><a href="/apply-now" wire:navigate>Apply now</a></button>
             </div>
         </div>
     </header>
