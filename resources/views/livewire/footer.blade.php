@@ -3,15 +3,15 @@
         <div class="container mx-auto flex flex-wrap justify-between">
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6">
                 <h3 class="text-lg font-bold mb-3">Office 1</h3>
-                <p>
+                {{-- <p>
                     <i class="fa fa-map-marker mr-2"></i>
                     @if ($location)
                         {{ $location }}
                     @else
                         No llocation to show
                     @endif
-                </p>
-                {{-- <p>Cityville, State 12345</p> --}}
+                </p> --}}
+                <p>Cityville, State 12345</p>
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6">
                 <h3 class="text-lg font-bold mb-3">Office 2</h3>

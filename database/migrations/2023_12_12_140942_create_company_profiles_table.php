@@ -14,8 +14,7 @@ return new class extends Migration
             $table->string('company_email');
             $table->string('primary_contact');
             $table->string('secondary_contact');
-            $table->double('latitude', 10, 6)->nullable();
-            $table->double('longitude', 10, 6)->nullable();
+            $table->string('location');
             $table->timestamps();
         });
     }

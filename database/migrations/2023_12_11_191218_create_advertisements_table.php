@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('female_required')->default(0);
             $table->string('minimun_qualification');
             $table->text('job_description');
+            $table->unsignedBigInteger('salary');
             $table->timestamps();
         });
     }

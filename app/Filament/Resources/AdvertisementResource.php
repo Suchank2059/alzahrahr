@@ -42,6 +42,10 @@ class AdvertisementResource extends Resource
                             ->label('No of female required')
                             ->numeric()
                             ->inputMode('decimal'),
+                        TextInput::make('salary')
+                            ->label('Salary')
+                            ->numeric()
+                            ->inputMode('decimal'),
                         TextInput::make('minimun_qualification')->required(),
                         Textarea::make('job_description')
                             ->helperText('Enter each point on a new line. It will be displayed as a bulleted list.')
