@@ -50,13 +50,7 @@
                 </div>
                 <div class="stats__item flex-1 xl:border-r flex flex-col items-center">
                     <div class="text-4xl xl:text-[32px] font-semibold text-accent-tertiary xl:mb-2">
-    public $jobs;
-
-    public function mount()
-    {
-            $this->jobs = $this->getJobs();
-    }
-                        +50
+                        +500
                     </div>
                     <div class="mb-2">
                         Consultants
@@ -72,23 +66,20 @@
                     <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center  py-4">
                         Our Current Vaciencies
                     </h2>
-{{--                    @if ($jobs->isNotEmpty())--}}
-                        <div class="flex flex-col text-[12px] xl:flex-row py-4">
-{{--                            @foreach ($jobs as $job)--}}
-                                <div
-                                    class="stats__item flex-1 border-r-2 border-l-2 flex flex-col xl:flex items-center">
-                                    <div class="text-xl text-accent  font-light  xl:mb-2">
-{{--                                        Job Title: {{ $job->job_title }}--}}
-                                    </div>
-                                    <div class="mb-2 xl:text-2xl font-light text-accent">
-{{--                                        No of Vacancies: {{ $job->male_required + $job->female_required }}--}}
-                                    </div>
-                                </div>
-{{--                            @endforeach--}}
+
+                    <div class="flex flex-col text-[12px] xl:flex-row py-4">
+
+                        <div class="stats__item flex-1 border-r-2 border-l-2 flex flex-col xl:flex items-center">
+                            <div class="text-xl text-accent  font-light  xl:mb-2">
+
+                            </div>
+                            <div class="mb-2 xl:text-2xl font-light text-accent">
+
+                            </div>
                         </div>
-{{--                    @else--}}
-                        <p class="text-center text-accent">No jobs are currently available.</p>
-{{--                    @endif--}}
+                    </div>
+
+                    <p class="text-center text-accent">No jobs are currently available.</p>
                     <div class="stats__item flex-1  flex flex-col xl:flex items-center cursor-pointer">
                         <a href="/vacancies" wire:navigate>
                             <p class="text-accent">read more...</p>

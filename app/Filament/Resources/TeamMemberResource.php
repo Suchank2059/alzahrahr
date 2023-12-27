@@ -36,8 +36,8 @@ class TeamMemberResource extends Resource
                     ->schema([
                         TextInput::make('name')->required(),
                         Textarea::make('post')->required(),
-                        RichEditor::make('description')->required(),
-                        SpatieMediaLibraryFileUpload::make('image'),
+                        RichEditor::make('description'),
+                        SpatieMediaLibraryFileUpload::make('image')->responsiveImages(),
                     ])
             ]);
     }

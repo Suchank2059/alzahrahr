@@ -19,6 +19,7 @@ class Advertisement extends Model implements HasMedia
         'male_required',
         'female_required',
         'minimun_qualification',
-        'job_description'
+        'job_description',
+        'salary'
     ];
 }
