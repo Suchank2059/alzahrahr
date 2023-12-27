@@ -1,4 +1,5 @@
 <div>
+    <div class="h-10 w-full bg-accent-tertiary"></div>
     <footer class="footer pt-12 xl:pt-[50px] mt-auto">
         <div class="container mx-auto flex flex-wrap justify-between">
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6">
@@ -23,7 +24,7 @@
                 </iframe>
             </div>
         </div>
-        <div class="text-center mt-8 mb-0">
+        <div class="text-center mt-8 mb-0 font-extralight">
             <p>&copy; 2023 Your Company. All rights reserved.</p>
         </div>
     </footer>

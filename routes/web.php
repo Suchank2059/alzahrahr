@@ -17,4 +17,3 @@ Route::get('/clients', Clients::class);
 Route::get('/contacts', Contacts::class);
 Route::get('/vacancies', Vacency::class);
 Route::get('/apply-now', ApplyNow::class);
-

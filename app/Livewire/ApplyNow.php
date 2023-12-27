@@ -8,6 +8,6 @@ class ApplyNow extends Component
 {
     public function render()
     {
-        return view('livewire.apply-now');
+        return view('livewire.UsersView.apply-now');
     }
 }
