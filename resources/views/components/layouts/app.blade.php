@@ -108,6 +108,9 @@
         <livewire:header />
     </header>
     {{ $slot }}
+    <footer>
+        <livewire:footer />
+    </footer>
 </body>
 
 </html>

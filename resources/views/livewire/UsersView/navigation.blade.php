@@ -12,7 +12,7 @@
                     <a href="/" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>Home</a>
                     <a href="/about-us" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>About</a>
                     <a href="/services" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>Services</a>
-                    <a href="/clients" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>Clients</a>
+                    <a href="/clients" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>Events</a>
                     <a href="/contacts" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>Contacts</a>
                     <a href="/vacancies" class="text-secondary hover:text-accent transition-all duration-300" wire:navigate>Vacancy</a>
                 </li>

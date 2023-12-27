@@ -554,7 +554,7 @@
                 } else {
                     slide.style.display = 'none';
                     slide.classList.remove('animate__animated',
-                    'animate__slideInLeft'); // Remove animation from other slides
+                        'animate__slideInLeft'); // Remove animation from other slides
                 }
             });
         }
@@ -573,8 +573,10 @@
 
         setInterval(autoSlide, 10000);
 
-        document.addEventListener('DOMContentLoaded', function() {
-            showSlide(currentSlide);
+        document.addEventListener('livewire:navigated', function() {
+            setTimeout(() => {
+                showSlide(currentSlide);
+            }, 1);
         });
     </script>
     <script>
@@ -594,7 +596,7 @@
         };
         //#endregion - end of - number counter animation
 
-        document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("livewire:navigated", () => {
             counterAnim("#count1", 10, 12000, 1000, 200);
             counterAnim("#count2", 500, 2, 2500);
             counterAnim("#count3", 500, 50, 1500);

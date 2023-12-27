@@ -1,8 +1,4 @@
     <div class="relative">
-        <!-- Background Image with Low Opacity -->
-        <!-- <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('image/ceo.jpg'); opacity: 0.5;"></div> -->
-
-        <!-- Header and Navigation Content -->
         <header class="fixed top-0 z-10 bg-grey shadow-lg">
             <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between  lg:gap-0">
                 <div class="flex justify-center lg:justify-normal">
@@ -49,7 +45,7 @@
                     <li>
                         <a href="/clients"
                             class= "menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 "
-                            onclick="setActiveLink(this)" wire:navigate>Clients</a>
+                            onclick="setActiveLink(this)" wire:navigate>Events</a>
                     </li>
                     <li>
                         <a href="/contacts"
