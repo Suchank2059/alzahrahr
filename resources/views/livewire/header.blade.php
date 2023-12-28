@@ -59,8 +59,5 @@
                     </li>
                 </ul>
             </nav>
-
         </header>
-        <!-- Navigation Bar -->
-
     </div>
