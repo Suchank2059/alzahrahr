@@ -99,7 +99,6 @@
         </div>
 
     </div>
-
     <section class="stats section ">
         <div class="container mx-auto">
             <div class="flex flex-col xl:flex-row gap-y-6">
@@ -290,25 +289,6 @@
             <p class="text-accent text-center mb-4 cursor-pointer">read more...</p>
         </a>
     </section>
-    {{-- <section class="our-team py-32 text-center bg-grey">
-        <h2 class="mb-12 text-3xl font-bold">
-            Meet the <u class="text-primary dark:text-primary-400">team</u>
-        </h2>
-
-        <div class="lg:gap-xl-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4">
-            @foreach ($members as $member)
-                <div class="mb-12 lg:mb-0">
-                    <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]"
-                        src="{{ $member->getFirstMediaUrl('default') }}" alt="{{ $member->name }} avatar" />
-                    <h5 class="mb-4 text-lg font-bold">{{ $member->name }}</h5>
-                    <p class="mb-6">{{ $member->post }}</p>
-                    <ul class="mx-auto flex list-inside justify-center">
-                    </ul>
-                </div>
-            @endforeach
-        </div>
-        <a class="h-4 w-6 p-4 rounded-xl bg-red-700  placeholder:More ">Our Teams</a>
-    </section> --}}
 
     <script type="text/javascript">
         $('.owl-carousel').owlCarousel({
@@ -331,55 +311,50 @@
         })
     </script>
     <script type="text/javascript">
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-item');
+        document.addEventListener('livewire:navigated', function() {
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-item');
 
-        document.addEventListener('livewire:navigating', showSlide = (n) => {
-            if (n >= slides.length) {
-                currentSlide = 0;
-            } else if (n < 0) {
-                currentSlide = slides.length - 1;
-            } else {
-                currentSlide = n;
+            const showSlide = (n) => {
+                if (n >= slides.length) {
+                    currentSlide = 0;
+                } else if (n < 0) {
+                    currentSlide = slides.length - 1;
+                } else {
+                    currentSlide = n;
+                }
+
+                slides.forEach((slide, index) => {
+                    if (index === currentSlide) {
+                        slide.style.display = 'block';
+
+                        slide.classList.add('animate__animated', 'animate__slideInRight');
+                    } else {
+                        slide.style.display = 'none';
+                        slide.classList.remove('animate__animated',
+                            'animate__slideInLeft');
+                    }
+                });
+            }
+            const nextSlide = () => {
+                showSlide(currentSlide + 1);
+            }
+            const prevSlide = () => {
+                showSlide(currentSlide - 1);
             }
 
-            slides.forEach((slide, index) => {
-                if (index === currentSlide) {
-                    slide.style.display = 'block';
-
-                    slide.classList.add('animate__animated', 'animate__slideInRight');
-                } else {
-                    slide.style.display = 'none';
-                    slide.classList.remove('animate__animated',
-                        'animate__slideInLeft');
-                }
-            });
-        })
-
-        document.addEventListener('livewire:navigating', nextSlide = () => {
-            setTimeout(function() {
-                showSlide(currentSlide + 1);
-            })
-        })
-        document.addEventListener('livewire:navigating', prevSlide = () => {
-            setTimeout(function() {
-                showSlide(currentSlide - 1);
-            })
-        })
-
-        document.addEventListener('livewire:navigating', autoSlide = () => {
-            setTimeout(function() {
+            const autoSlide = () => {
                 nextSlide();
-            })
-        })
+            }
 
-        setInterval(autoSlide, 3000);
+            setInterval(autoSlide, 3000);
 
-        document.addEventListener('livewire:navigated', () => {
-            setTimeout(function() {
-                showSlide(currentSlide);
+            document.addEventListener('DOMContentLoaded', () => {
+                setTimeout(() => {
+                    showSlide(currentSlide);
+                }, 1);
             });
-        });
+        })
     </script>
     <script>
         const counterAnim = (qSelector, start = 0, end, duration = 1000) => {

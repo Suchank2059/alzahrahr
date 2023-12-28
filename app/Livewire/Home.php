@@ -11,6 +11,7 @@ class Home extends Component
     public $jobs;
     public $teamMembers;
 
+
     public function mount()
     {
         $this->jobs = $this->getJobs();
