@@ -109,7 +109,7 @@
     </style>
 </head>
 
-<body class="w-screen h-screen bg-gray-100">
+<body>
     <header>
         <livewire:header />
     </header>
