@@ -11,7 +11,6 @@ use App\Livewire\Events;
 use App\Livewire\Photos;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('/', Home::class);
 Route::get('/about-us', AboutUs::class);
 Route::get('/services', Services::class);

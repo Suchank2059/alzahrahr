@@ -8,6 +8,7 @@ use Livewire\Component;
 class Header extends Component
 {
     public $location;
+
     public $contact;
 
     public function mount()

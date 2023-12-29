@@ -9,8 +9,8 @@ use Livewire\Component;
 class Home extends Component
 {
     public $jobs;
-    public $teamMembers;
 
+    public $teamMembers;
 
     public function mount()
     {
