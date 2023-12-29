@@ -10,8 +10,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
 
 class Photo extends Model implements HasMedia
 {
-    use InteractsWithMedia;
     use HasFactory;
+    use InteractsWithMedia;
 
     public function event(): BelongsTo
     {

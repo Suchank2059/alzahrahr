@@ -2,7 +2,6 @@
 
 namespace App\Filament\Resources\EventResource\RelationManagers;
 
-use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Form;
@@ -10,8 +9,6 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class PhotosRelationManager extends RelationManager
 {
@@ -26,7 +23,7 @@ class PhotosRelationManager extends RelationManager
                         SpatieMediaLibraryFileUpload::make('photos')
                             ->multiple()
                             ->responsiveImages(),
-                    ])
+                    ]),
             ]);
     }
 
@@ -35,7 +32,7 @@ class PhotosRelationManager extends RelationManager
         return $table
             ->recordTitleAttribute('photos')
             ->columns([
-                SpatieMediaLibraryImageColumn::make('photos')
+                SpatieMediaLibraryImageColumn::make('photos'),
             ])
             ->filters([
                 //

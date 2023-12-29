@@ -13,6 +13,6 @@ class TeamMember extends Model implements HasMedia
     use InteractsWithMedia;
 
     protected $fillable = [
-        'name', 'post', 'description', 'image'
+        'name', 'post', 'description', 'image',
     ];
 }

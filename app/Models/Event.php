@@ -7,11 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-
     use HasFactory;
 
     protected $fillable = [
-        'name', 'description'
+        'name', 'description',
     ];
 
     public function photos()

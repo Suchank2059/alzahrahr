@@ -7,15 +7,12 @@
                 <p><i class="fa fa-map-marker mr-2"></i><span class="text-accent"> Tower, Business Bay, Dubai United Arab
                         Emirates</span></p>
                 <p><i class="fa fa-phone mr-2"></i><span class="text-accent">+9715599976543</span></p>
-                <p> <i class="fa fa-envelope mr-2"></i><span class="text-accent">@alzahrahr.com</span></p>
+                <p> <i class="fa fa-envelope mr-2"></i><span class="text-accent">info@alzahrahr.com</span></p>
 
             </div>
             <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6">
                 <h3 class="text-lg font-bold mb-3">Nepal Office</h3>
                 <p><i class="fa fa-map-marker mr-2"></i><span class="text-accent"> {{ $location }}</span></p>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-6">
-                <h3 class="text-lg font-bold mb-3">Contact Us</h3>
                 <p><i class="fa fa-envelope mr-2"></i>Email: <span class="text-accent">{{ $email }}</span></p>
                 <p><i class="fa fa-phone mr-2"></i>Primary Contact: <span
                         class="text-accent">{{ $primaryContact }}</span></p>

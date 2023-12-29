@@ -3,10 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\TeamMemberResource\Pages;
-use App\Filament\Resources\TeamMemberResource\RelationManagers;
 use App\Models\TeamMember;
-use Filament\Forms;
-use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
@@ -15,12 +12,9 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class TeamMemberResource extends Resource
 {
@@ -38,7 +32,7 @@ class TeamMemberResource extends Resource
                         Textarea::make('post')->required(),
                         RichEditor::make('description'),
                         SpatieMediaLibraryFileUpload::make('image')->responsiveImages(),
-                    ])
+                    ]),
             ]);
     }
 
@@ -49,7 +43,7 @@ class TeamMemberResource extends Resource
                 TextColumn::make('name'),
                 TextColumn::make('post'),
                 TextColumn::make('description')->limit(20)->markdown(),
-                SpatieMediaLibraryImageColumn::make('image')->circular()
+                SpatieMediaLibraryImageColumn::make('image')->circular(),
             ])
             ->filters([
                 //

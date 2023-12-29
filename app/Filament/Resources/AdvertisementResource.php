@@ -3,10 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\AdvertisementResource\Pages;
-use App\Filament\Resources\AdvertisementResource\RelationManagers;
 use App\Models\Advertisement;
-use Filament\Forms;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\Textarea;
@@ -17,8 +14,6 @@ use Filament\Tables;
 use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class AdvertisementResource extends Resource
 {
@@ -53,7 +48,7 @@ class AdvertisementResource extends Resource
                             ->helperText('Enter each point on a new line. It will be displayed as a bulleted list.')
                             ->required(),
                         SpatieMediaLibraryFileUpload::make('image'),
-                    ])
+                    ]),
             ]);
     }
 
@@ -68,7 +63,7 @@ class AdvertisementResource extends Resource
                 TextColumn::make('female_required'),
                 TextColumn::make('minimun_qualification'),
                 TextColumn::make('job_description')->limit(20)->markdown(),
-                SpatieMediaLibraryImageColumn::make('image')
+                SpatieMediaLibraryImageColumn::make('image'),
             ])
             ->filters([
                 //

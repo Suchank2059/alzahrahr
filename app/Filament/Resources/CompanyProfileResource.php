@@ -3,10 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\CompanyProfileResource\Pages;
-use App\Filament\Resources\CompanyProfileResource\RelationManagers;
 use App\Models\CompanyProfile;
-use Cheesegrits\FilamentGoogleMaps\Fields\Map;
-use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -14,9 +11,6 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Ramsey\Uuid\Type\Decimal;
 
 class CompanyProfileResource extends Resource
 {
@@ -33,9 +27,9 @@ class CompanyProfileResource extends Resource
                         TextInput::make('company_name')->required(),
                         TextInput::make('company_email')->required()->email(),
                         TextInput::make('primary_contact')->required()->numeric(),
-                        TextInput::make('secondary_contact')->numeric()->inputMode("decimal"),
+                        TextInput::make('secondary_contact')->numeric()->inputMode('decimal'),
                         TextInput::make('location')->required(),
-                    ])
+                    ]),
             ]);
     }
 

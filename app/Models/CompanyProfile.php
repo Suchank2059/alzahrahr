@@ -10,6 +10,6 @@ class CompanyProfile extends Model
     use HasFactory;
 
     protected $fillable = [
-        'company_name', 'company_email', 'primary_contact', 'secondary_contact', 'location'
+        'company_name', 'company_email', 'primary_contact', 'secondary_contact', 'location',
     ];
 }
