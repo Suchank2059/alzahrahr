@@ -43,7 +43,7 @@
                             onclick="setActiveLink(this)" wire:navigate>Services</a>
                     </li>
                     <li>
-                        <a href="/clients"
+                        <a href="/events"
                             class= "menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 "
                             onclick="setActiveLink(this)" wire:navigate>Events</a>
                     </li>

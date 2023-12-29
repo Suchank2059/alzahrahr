@@ -1,9 +1,7 @@
 <div>
 <livewire:navigation />
     <livewire:web-livewire />
-  <!-- Container for demo purpose -->
   <div class="container my-24 mx-auto md:px-6">
-    <!-- Section: Design Block -->
     <section class="mb-32">
       <style>
         .zoom:hover img {
@@ -166,7 +164,5 @@
         </div>
       </div>
     </section>
-    <!-- Section: Design Block -->
   </div>
-  <!-- Container for demo purpose --><livewire:footer />
 </div>
