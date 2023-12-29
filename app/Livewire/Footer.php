@@ -8,55 +8,24 @@ use GuzzleHttp\Client;
 
 class Footer extends Component
 {
-    public $latitude;
-    public $longitude;
     public $location;
+    public $primaryContact;
+    public $secondaryContact;
     public $email;
-    public $primary_contact;
-    // public $apiKey = "AIzaSyDmRiLCQl0GTlmLQPoUkdQNX01ydfRfXs0";
 
     public function mount()
     {
-        $companyProfile = CompanyProfile::latest()->first();
+        $companyProfile = CompanyProfile::where('company_email', 'alzahranepal@gmail.com')->first();
 
         if ($companyProfile) {
+            $this->location = $companyProfile->location;
+            $this->primaryContact = $companyProfile->primary_contact;
+            $this->secondaryContact = $companyProfile->secondary_contact;
             $this->email = $companyProfile->company_email;
-            $this->primary_contact = $companyProfile->primary_contact;
-            $this->latitude = $companyProfile->latitude;
-            $this->longitude = $companyProfile->longitude;
         }
-
-        // $this->location = $this->getPlaceName($this->latitude , $this->longitude , $this->apiKey);
     }
     public function render()
     {
-        return view('livewire.footer');
+        return view('livewire.footer', ['location' => $this->location, 'primaryContact' => $this->primaryContact, 'secondaryContact' => $this->secondaryContact, 'email' => $this->email]);
     }
-
-    // function getPlaceName($latitude, $longitude, $apiKey)
-    // {
-    //     $client = new Client();
-
-    //     try {
-    //         $response = $client->get('https://maps.googleapis.com/maps/api/geocode/json', [
-    //             'query' => [
-    //                 'latlng' => "{$latitude},{$longitude}",
-    //                 'key' => $apiKey,
-    //             ],
-    //         ]);
-
-    //         $data = json_decode($response->getBody(), true);
-
-    //         // Check if the request was successful and there is a result
-    //         if ($data['status'] === 'OK' && isset($data['results'][0]['formatted_address'])) {
-    //             return $data['results'][0]['formatted_address'];
-    //         }
-
-    //         // Handle the case when no result is found
-    //         return 'No location to show';
-    //     } catch (\Exception $e) {
-    //         // Handle exceptions, log errors, etc.
-    //         return 'Error fetching location';
-    //     }
-    // }
 }

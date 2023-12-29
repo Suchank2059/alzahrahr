@@ -1,12 +1,9 @@
-<!-- Container for demo purpose -->
 <div class="">
     <livewire:navigation />
     <livewire:web-livewire />
 <<<<<<< Updated upstream
 
-    <!-- Container for demo purpose -->
     <div class="container my-24 mx-auto md:px-6">
-        <!-- Section: Design Block -->
         <section class="mb-32 text-center">
             <div class="py-12 md:px-12">
                 <div class="container mx-auto xl:px-32">
@@ -54,9 +51,10 @@
                         <div class="md:mb-12 lg:mb-0">
                             <div class="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
                                 <iframe
-                                    src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d182533.8656444197!2d85.1851941130638!3d27.679673560011242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d27.6453743!2d85.253795!4m5!1s0x39eb190025b96a67%3A0xbf2daabad513b674!2sP82V%2B5FH%2C%20Kathmandu%2044600!3m2!1d27.700432!2d85.3437495!5e0!3m2!1sen!2snp!4v1703779837809!5m2!1sen!2snp"
                                     class="absolute left-0 top-0 h-full w-full rounded-lg" frameborder="0"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen>
+                                </iframe>
                             </div>
                         </div>
                     </div>
