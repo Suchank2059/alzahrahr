@@ -2,54 +2,97 @@
   <div class="container my-24 mx-auto md:px-6">
     <livewire:navigation />
     <livewire:web-livewire />
-    <section class="mb-32 text-center">
-      <div class="py-12 md:px-12">
-        <div class="container mx-auto xl:px-32">
-          <div class="grid items-center lg:grid-cols-2">
-            <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
-              <div class="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[30px] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:px-12 lg:-mr-14">
-                <h2 class="mb-12 text-3xl font-bold">Contact us</h2>
-                <form>
-                  <div class="relative mb-6" data-te-input-wrapper-init>
-                    <input type="text" class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 relative" id="exampleInput90" placeholder="Name" />
-                    <label for="exampleInput90" class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.5rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">
-                      Name
-                    </label>
-                    <hr>
+    <section class="bg-blue-50 dark:bg-slate-800 mt-64" id="contact">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mb-4">
+          <div class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
+            <p class="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
+              Contact
+            </p>
+            <h2 class="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
+              Get in Touch
+            </h2>
+            <p class="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">In hac habitasse platea
+              dictumst
+            </p>
+          </div>
+        </div>
+        <div class="flex items-stretch justify-center">
+          <div class="grid md:grid-cols-2">
+            <div class="h-full pr-6">
+              <p class="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                Class aptent taciti sociosqu ad
+                litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
+                sagittis ante, ac tincidunt sem venenatis ut.
+              </p>
+              <ul class="mb-6 md:mb-0">
+                <li class="flex">
+                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+                      </path>
+                    </svg>
                   </div>
-                  <div class="relative mb-6 " data-te-input-wrapper-init>
-                    <input type="email" class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0" id="exampleInput91" placeholder="Email address" />
-                    <label class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary" for="exampleInput91">Email address
-                    </label>
-                    <hr>
+                  <div class="ml-4 mb-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address
+                    </h3>
+                    <p class="text-gray-600 dark:text-slate-400">1230 Maecenas Street Donec Road</p>
+                    <p class="text-gray-600 dark:text-slate-400">New York, EEUU</p>
                   </div>
-                  <div class="relative mb-6" data-te-input-wrapper-init>
-                    <textarea class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-                    <label for="exampleFormControlTextarea1" class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
+                </li>
+                <li class="flex">
+                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                      <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2">
+                      </path>
+                      <path d="M15 7a2 2 0 0 1 2 2"></path>
+                      <path d="M15 3a6 6 0 0 1 6 6"></path>
+                    </svg>
                   </div>
-                  <div class="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
-                    <input class="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]" type="checkbox" value="" id="exampleCheck96" checked />
-                    <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="exampleCheck96">
-                      Send me a copy of this message
-                    </label>
+                  <div class="ml-4 mb-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact
+                    </h3>
+                    <p class="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
+                    <p class="text-gray-600 dark:text-slate-400">Mail: tailnext@gmail.com</p>
                   </div>
-                  <button type="button" data-te-ripple-init data-te-ripple-color="light" class="inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0">
-                    Send
-                  </button>
-                </form>
-              </div>
+                </li>
+                <li class="flex">
+                  <div class="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                      <path d="M12 7v5l3 3"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-4 mb-4">
+                    <h3 class="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">Working
+                      hours</h3>
+                    <p class="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
+                    <p class="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="md:mb-12 lg:mb-0">
-              <div class="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
-                <!-- <iframe
-                src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                class="absolute left-0 top-0 h-full w-full rounded-lg"
-                frameborder="0"
-                allowfullscreen></iframe> -->
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d182533.8656444197!2d85.1851941130638!3d27.679673560011242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d27.6453743!2d85.253795!4m5!1s0x39eb190025b96a67%3A0xbf2daabad513b674!2sP82V%2B5FH%2C%20Kathmandu%2044600!3m2!1d27.700432!2d85.3437495!5e0!3m2!1sen!2snp!4v1703779837809!5m2!1sen!2snp" class="absolute left-0 top-0 h-full w-full rounded-lg" frameborder="0" allowfullscreen>
-                </iframe>
-              </div>
+            <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
+              <h2 class="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
+              <form id="contactForm">
+                <div class="mb-6">
+                  <div class="mx-0 mb-1 sm:mb-4">
+                    <div class="mx-0 mb-1 sm:mb-4">
+                      <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name">
+                    </div>
+                    <div class="mx-0 mb-1 sm:mb-4">
+                      <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email">
+                    </div>
+                  </div>
+                  <div class="mx-0 mb-1 sm:mb-4">
+                    <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

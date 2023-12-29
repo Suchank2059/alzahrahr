@@ -22,9 +22,9 @@ export default {
                 primary: "#242a2b", // Change to your preferred primary color
                 secondary: "#808080", // Change to your preferred secondary color
                 accent :{
-                    DEFAULT : '#1cbccf',
-                    secondary: '#18abbc',
-                    tertiary : '#90c6cd',
+                    DEFAULT : '#228B22',
+                    secondary: '#006D5B',
+                    tertiary : '#32CD32',
                 },
                 grey : '#e8f0f1'
 

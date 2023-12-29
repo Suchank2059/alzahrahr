@@ -30,6 +30,17 @@
                         <a href="/" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Home</a>
                     </li>
                     <li>
+                        <div class="dropdown">
+                            <button>Who we are</button>
+                            <div class="dropdown-content ">
+                                <a href="https://blog.hubspot.com/">About us</a>
+                                <a href="https://academy.hubspot.com/">Message from Chair man</a>
+                                <a href="https://www.youtube.com/user/hubspot">Why Nepali workforce</a>
+                                <a href="https://www.youtube.com/user/hubspot">Our certificates</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
                         <a href="/about-us" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>About</a>
                     </li>
                     <li>

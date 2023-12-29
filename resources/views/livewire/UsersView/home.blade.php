@@ -303,7 +303,7 @@
                 </div>
             </div>
         </main>
-        <div class="owl-carousel owl-theme bg-grey mt-6">
+        <div class="owl-carousel owl-theme bg-grey py-12">
             <div class="item"><img src="image/owl1.png"></div>
             <div class="item"><img src="image/owl2.png"></div>
             <div class="item"><img src="image/owl3.png"></div>
@@ -318,7 +318,7 @@
             <div class="item"><img src="image/owl3.png"></div>
         </div>
     </section>
-    <section class="services flex justify-center mb-6 bg-grey">
+    <section class="services flex justify-center  p-8 bg-grey">
         <div class="bg-white rounded-3xl shadow-custom2 w-[80%] flex ">
             <div class="container mx-auto">
                 <div class="services__top items-center xl:mb-[60px]">
@@ -349,6 +349,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="service sm:hidden md:block items-center justify-center w-full" style="background-image: url('image/desert.png')">
         <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center py-4">
