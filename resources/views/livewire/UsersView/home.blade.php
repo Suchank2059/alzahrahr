@@ -338,148 +338,135 @@
         <a class="text-center text-emerald-800">View all clients</a>
 
     </section>
-    <section class="services flex justify-center  p-8 bg-grey">
-        <div class="bg-white rounded-3xl shadow-custom2 w-[80%] flex ">
-            <section class="services flex justify-center mb-6 bg-grey">
-                <div class="bg-white rounded-3xl shadow-custom2 w-[80%] flex xl:mb-5">
-                    >>>>>>> dev
-                    <div class="container mx-auto">
-                        <div class="services__top items-center xl:mb-[10px]">
-                            <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center py-4">
-                                Our Current Vacancies
-                            </h2>
+    <section class="services flex justify-center mb-6 bg-grey">
+        <div class="bg-white rounded-3xl shadow-custom2 w-[80%] flex xl:mb-5">
+            <div class="container mx-auto">
+                <div class="services__top items-center xl:mb-[10px]">
+                    <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center py-4">
+                        Our Current Vacancies
+                    </h2>
 
-                            @if ($jobs->isNotEmpty())
-                                <div class="your-jobs-container flex space-x-80">
-                                    @foreach ($jobs as $job)
-                                        <div class="job-info">
-                                            <p class="job-title">Job title: <span
-                                                    class="text-accent">{{ $job->job_title }}</span>
-                                            </p>
-                                            <p class="vacancies">Vacancies: <span
-                                                    class="text-accent">{{ $job->male_required + $job->female_required }}</span>
-                                            </p>
-                                        </div>
-                                    @endforeach
+                    @if ($jobs->isNotEmpty())
+                        <div class="your-jobs-container flex space-x-80">
+                            @foreach ($jobs as $job)
+                                <div class="job-info">
+                                    <p class="job-title">Job title: <span
+                                            class="text-accent">{{ $job->job_title }}</span>
+                                    </p>
+                                    <p class="vacancies">Vacancies: <span
+                                            class="text-accent">{{ $job->male_required + $job->female_required }}</span>
+                                    </p>
                                 </div>
-                            @else
-                                <p class="text-center text-accent">No jobs are currently available.</p>
-                            @endif
-
-                            <div class="stats__item flex-1 flex flex-col xl:flex items-center cursor-pointer ">
-                                <a href="/vacancies" wire:navigate>
-                                    <p class="text-accent mt-10">Read more...</p>
-                                </a>
-                            </div>
+                            @endforeach
                         </div>
+                    @else
+                        <p class="text-center text-accent">No jobs are currently available.</p>
+                    @endif
+
+                    <div class="stats__item flex-1 flex flex-col xl:flex items-center cursor-pointer ">
+                        <a href="/vacancies" wire:navigate>
+                            <p class="text-accent mt-10">Read more...</p>
+                        </a>
                     </div>
                 </div>
-            </section>
-
-            <<<<<<< HEAD <section class="service sm:hidden md:block items-center justify-center w-full"
-                style="background-image: url('image/desert.png')">
-                =======
-                <section class="service sm:hidden md:block items-center justify-center w-full"
-                    style="background-image: url('image/desert.png')">
-                    >>>>>>> dev
-                    <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center py-4">
-                        Our Services
-                    </h2>
-                    <div class="containers flex">
-                        <div
-                            class="card relative max-w-300 h-215 bg-white m-30 mx-10 p-20 pb-15 flex flex-col shadow-md transition-transform duration-300 ease-in-out rounded-15 hover:h-[320px]">
-                            <div class="image relative w-260 h-260 top-neg-40 left-8 shadow-md z-10">
-                                <img class="max-w-full rounded-15" href="#"
-                                    src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                            </div>
-                            <div
-                                class="content relative top-neg-140 pt-32 text-center text-black visibility-hidden opacity-0 transition-opacity duration-300 ease-in-out">
-                                <p class="text-[16px] font-medium text-emerald-700">Documentation</p>
-                                <p class="leading-4 text-[10px]">DIn publishing and graphic design,Lorem ipsum is a
-                                    placeholder
-                                    textcommonly used to demonstrate the visual form of a document or a typeface without
-                                    relying on
-                                    meaningful content.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="card relative max-w-300 h-215 bg-white m-30 mx-10 p-20 pb-15 flex flex-col shadow-md transition-transform duration-300 ease-in-out rounded-15 hover:h-[320px]">
-                            <div class="image relative w-260 h-260 top-neg-40 left-8 shadow-md z-10">
-                                <img class="max-w-full rounded-15" href="#"
-                                    src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                            </div>
-                            <div
-                                class="content relative top-neg-140 pt-32 text-center text-black visibility-hidden opacity-0 transition-opacity duration-300 ease-in-out">
-                                <p class="text-[16px] font-medium text-emerald-700">Documentation</p>
-                                <p class="leading-4 text-[10px]">DIn publishing and graphic design,Lorem ipsum is a
-                                    placeholder
-                                    textcommonly used to demonstrate the visual form of a document or a typeface without
-                                    relying on
-                                    meaningful content.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="card relative max-w-300 h-215 bg-white m-30 mx-10 p-20 pb-15 flex flex-col shadow-md transition-transform duration-300 ease-in-out rounded-15 hover:h-[320px]">
-                            <div class="image relative w-260 h-260 top-neg-40 left-8 shadow-md z-10">
-                                <img class="max-w-full rounded-15" href="#"
-                                    src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
-                            </div>
-                            <div
-                                class="content relative top-neg-140 pt-32 text-center text-black visibility-hidden opacity-0 transition-opacity duration-300 ease-in-out">
-                                <p class="text-[16px] font-medium text-emerald-700">Documentation</p>
-                                <p class="leading-4 text-[10px]">DIn publishing and graphic design,Lorem ipsum is a
-                                    placeholder
-                                    textcommonly used to demonstrate the visual form of a document or a typeface without
-                                    relying on
-                                    meaningful content.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <a href="/services">
-                        <p class="text-accent text-center mb-4 cursor-pointer">read more...</p>
-                    </a>
-                </section>
-                <script type="text/javascript">
-                    $('.owl-carousel').owlCarousel({
-                        loop: true,
-                        margin: 10,
-                        nav: false,
-                        autoplay: true,
-                        autoPlayTimeout: 50,
-                        responsive: {
-                            0: {
-                                items: 1
-                            },
-                            600: {
-                                items: 3
-                            },
-                            1000: {
-                                items: 5
-                            }
-                        }
-                    });
-                </script>
-                <script>
-                    const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
-                        const target = document.querySelector(qSelector);
-                        let startTimestamp = null;
-                        const step = (timestamp) => {
-                            if (!startTimestamp) startTimestamp = timestamp;
-                            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                            target.innerText = Math.floor(progress * (end - start) + start);
-                            if (progress < 1) {
-                                window.requestAnimationFrame(step);
-                            }
-                        };
-                        window.requestAnimationFrame(step);
-                    };
-
-                    document.addEventListener("livewire:navigated", () => {
-                        counterAnim("#count1", 10, 12000, 1000, 200);
-                        counterAnim("#count2", 500, 2, 2500);
-                        counterAnim("#count3", 500, 50, 1500);
-                        counterAnim("#count4", 500, 12, 2500);
-                    });
-                </script>
+            </div>
         </div>
+    </section>
+
+    <section class="service sm:hidden md:block items-center justify-center w-full"
+        style="background-image: url('image/desert.png')">
+        <h2 class="xl:text-[40px] text-[18px] text-secondary xl:mt-2 flex justify-center py-4">
+            Our Services
+        </h2>
+        <div class="containers flex">
+            <div
+                class="card relative max-w-300 h-215 bg-white m-30 mx-10 p-20 pb-15 flex flex-col shadow-md transition-transform duration-300 ease-in-out rounded-15 hover:h-[320px]">
+                <div class="image relative w-260 h-260 top-neg-40 left-8 shadow-md z-10">
+                    <img class="max-w-full rounded-15" href="#"
+                        src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
+                </div>
+                <div
+                    class="content relative top-neg-140 pt-32 text-center text-black visibility-hidden opacity-0 transition-opacity duration-300 ease-in-out">
+                    <p class="text-[16px] font-medium text-emerald-700">Documentation</p>
+                    <p class="leading-4 text-[10px]">DIn publishing and graphic design,Lorem ipsum is a placeholder
+                        textcommonly used to demonstrate the visual form of a document or a typeface without relying on
+                        meaningful content.</p>
+                </div>
+            </div>
+            <div
+                class="card relative max-w-300 h-215 bg-white m-30 mx-10 p-20 pb-15 flex flex-col shadow-md transition-transform duration-300 ease-in-out rounded-15 hover:h-[320px]">
+                <div class="image relative w-260 h-260 top-neg-40 left-8 shadow-md z-10">
+                    <img class="max-w-full rounded-15" href="#"
+                        src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
+                </div>
+                <div
+                    class="content relative top-neg-140 pt-32 text-center text-black visibility-hidden opacity-0 transition-opacity duration-300 ease-in-out">
+                    <p class="text-[16px] font-medium text-emerald-700">Documentation</p>
+                    <p class="leading-4 text-[10px]">DIn publishing and graphic design,Lorem ipsum is a placeholder
+                        textcommonly used to demonstrate the visual form of a document or a typeface without relying on
+                        meaningful content.</p>
+                </div>
+            </div>
+            <div
+                class="card relative max-w-300 h-215 bg-white m-30 mx-10 p-20 pb-15 flex flex-col shadow-md transition-transform duration-300 ease-in-out rounded-15 hover:h-[320px]">
+                <div class="image relative w-260 h-260 top-neg-40 left-8 shadow-md z-10">
+                    <img class="max-w-full rounded-15" href="#"
+                        src=https://i.pinimg.com/originals/a4/7b/a5/a47ba59b4a353e0928ef0551ca44f980.jpg>
+                </div>
+                <div
+                    class="content relative top-neg-140 pt-32 text-center text-black visibility-hidden opacity-0 transition-opacity duration-300 ease-in-out">
+                    <p class="text-[16px] font-medium text-emerald-700">Documentation</p>
+                    <p class="leading-4 text-[10px]">DIn publishing and graphic design,Lorem ipsum is a placeholder
+                        textcommonly used to demonstrate the visual form of a document or a typeface without relying on
+                        meaningful content.</p>
+                </div>
+            </div>
+
+        </div>
+        <a href="/services">
+            <p class="text-accent text-center mb-4 cursor-pointer">read more...</p>
+        </a>
+    </section>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoPlayTimeout: 50,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+    </script>
+    <script>
+        const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
+            const target = document.querySelector(qSelector);
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                target.innerText = Math.floor(progress * (end - start) + start);
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        };
+
+        document.addEventListener("livewire:navigated", () => {
+            counterAnim("#count1", 10, 12000, 1000, 200);
+            counterAnim("#count2", 500, 2, 2500);
+            counterAnim("#count3", 500, 50, 1500);
+            counterAnim("#count4", 500, 12, 2500);
+        });
+    </script>
+</div>
