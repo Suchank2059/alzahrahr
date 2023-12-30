@@ -17,7 +17,7 @@
                         wire:navigate>About</a>
                     <a href="/services" class="text-secondary hover:text-accent transition-all duration-300"
                         wire:navigate>Services</a>
-                    <a href="/clients" class="text-secondary hover:text-accent transition-all duration-300"
+                    <a href="/events" class="text-secondary hover:text-accent transition-all duration-300"
                         wire:navigate>Events</a>
                     <a href="/contacts" class="text-secondary hover:text-accent transition-all duration-300"
                         wire:navigate>Contacts</a>
