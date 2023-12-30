@@ -2,21 +2,18 @@
 
 namespace App\Models;
 
-use Filament\Models\Contracts\HasName;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Event extends Model
+class Client extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name', 'description',
-    ];
+    protected $fillable = ['country_name'];
 
-    public function photos(): HasMany
+    public function companies(): HasMany
     {
-        return $this->hasMany(Photo::class);
+        return $this->hasMany(Company::class);
     }
 }
