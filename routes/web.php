@@ -8,6 +8,9 @@ use App\Livewire\Services;
 use App\Livewire\Vacency;
 use App\Livewire\ApplyNow;
 use App\Livewire\Events;
+use App\Livewire\ExpertiseSayings;
+use App\Livewire\NepaliWorkforce;
+use App\Livewire\OurCertificates;
 use App\Livewire\Photos;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +22,7 @@ Route::get('/contacts', Contacts::class);
 Route::get('/vacancies', Vacency::class);
 Route::get('/apply-now', ApplyNow::class);
 Route::get('/photos/{eventId}', Photos::class);
+Route::get('/clients', Clients::class);
+Route::get('/expertise-saying', ExpertiseSayings::class);
+Route::get('/nepali-workers', NepaliWorkforce::class);
+Route::get('/our-certificates', OurCertificates::class);

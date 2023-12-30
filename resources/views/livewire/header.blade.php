@@ -33,10 +33,10 @@
                         <div class="dropdown">
                             <button>Who we are</button>
                             <div class="dropdown-content ">
-                                <a href="https://blog.hubspot.com/">About us</a>
-                                <a href="https://academy.hubspot.com/">Message from Chair man</a>
-                                <a href="https://www.youtube.com/user/hubspot">Why Nepali workforce</a>
-                                <a href="https://www.youtube.com/user/hubspot">Our certificates</a>
+                                <a href="/about-us" wire:navigate>About us</a>
+                                <a href="/expertise-saying" wire:navigate>Message from our expertise</a>
+                                <a href="/nepali-workers" wire:navigate>Why Nepali workforce</a>
+                                <a href="/our-certificates" wire:navigate>Our certificates</a>
                             </div>
                         </div>
                     </li>
@@ -47,9 +47,7 @@
                         <a href="/services" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Services</a>
                     </li>
                     <li>
-                        <a href="/events"
-                            class= "menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 "
-                            onclick="setActiveLink(this)" wire:navigate>Events</a>
+                        <a href="/events" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Events</a>
                     </li>
                     <li>
                         <a href="/contacts" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Contacts</a>
