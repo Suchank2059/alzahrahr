@@ -26,8 +26,8 @@ class CompanyProfileResource extends Resource
                     ->schema([
                         TextInput::make('company_name')->required(),
                         TextInput::make('company_email')->required()->email(),
-                        TextInput::make('primary_contact')->required()->numeric(),
-                        TextInput::make('secondary_contact')->numeric()->inputMode('decimal'),
+                        TextInput::make('primary_contact')->required(),
+                        TextInput::make('secondary_contact'),
                         TextInput::make('location')->required(),
                     ]),
             ]);

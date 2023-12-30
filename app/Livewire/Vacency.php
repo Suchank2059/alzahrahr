@@ -3,24 +3,33 @@
 namespace App\Livewire;
 
 use App\Models\Advertisement;
+use Illuminate\View\View;
 use Livewire\Component;
 
 class Vacency extends Component
 {
-    // public $jobs;
-    // public $jobDescriptions;
-    // public function mount()
-    // {
-    //     $this->jobs = $this->getJobs();
-    // }
-    public function render()
+    public $jobs;
+
+    public function mount(): void
     {
-        return view('livewire.vacency');
+        $this->deleteOldAdvertisements();
+        $this->jobs = $this->getJobs();
     }
-    // private function getJobs()
-    // {
-    //     // Fetch all instances of jobs
-    //     $ads = Advertisement::get();
-    //     return $ads;
-    // }
+
+    public function render(): View
+    {
+        return view('livewire.UsersView.vacency', [
+            'jobs' => $this->jobs,
+        ]);
+    }
+
+    private function deleteOldAdvertisements(): void
+    {
+        Advertisement::where('created_at', '<', now()->subDays(8))->delete();
+    }
+
+    private function getJobs()
+    {
+        return Advertisement::get();
+    }
 }

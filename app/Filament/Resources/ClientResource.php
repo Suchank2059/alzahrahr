@@ -3,10 +3,8 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\ClientResource\Pages;
-use App\Filament\Resources\ClientResource\RelationManagers;
 use App\Filament\Resources\ClientResource\RelationManagers\CompaniesRelationManager;
 use App\Models\Client;
-use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -14,8 +12,8 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 
 class ClientResource extends Resource
 {
@@ -30,6 +28,7 @@ class ClientResource extends Resource
                 Section::make()
                     ->schema([
                         TextInput::make('country_name')->required(),
+                        SpatieMediaLibraryFileUpload::make('country_flag')->responsiveImages(),
                     ]),
             ]);
     }
@@ -39,6 +38,7 @@ class ClientResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('country_name'),
+                SpatieMediaLibraryImageColumn::make('country_flag'),
             ])
             ->filters([
                 //
