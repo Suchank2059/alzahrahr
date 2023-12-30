@@ -47,7 +47,9 @@
                         <a href="/services" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Services</a>
                     </li>
                     <li>
-                        <a href="/clients" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Events</a>
+                        <a href="/events"
+                            class= "menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 "
+                            onclick="setActiveLink(this)" wire:navigate>Events</a>
                     </li>
                     <li>
                         <a href="/contacts" class="menu-item text-secondary hover:text-accent transition-all duration-300 border-r pr-4 " onclick="setActiveLink(this)" wire:navigate>Contacts</a>
