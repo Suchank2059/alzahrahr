@@ -7,7 +7,7 @@
             <h3 class="text-emerald-800 text-[20px] ">Vacancies</h3>
         </div>
         @foreach ($jobs as $job)
-            <section class="flex justify-center mb-6 w-full  border-4 border-dashed rounded-lg shadow-lg">
+            <section class="flex justify-center mb-6 w-full  border-4 border-dashed rounded-lg border-emerald-500 shadow-lg">
                 <div class="bg-white rounded-3xl shadow-custom2 w-full p-4">
                     <div class="w-full">
 
