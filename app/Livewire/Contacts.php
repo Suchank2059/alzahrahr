@@ -49,9 +49,9 @@ class Contacts extends Component
     {
         $this->validate();
         $this->loading = true;
-        Mail::to($this->company_email)->send(new ContactUsMail($this->name, $this->email, $this->message));
+        Mail::to("apdhungana123@gmail.com")->send(new ContactUsMail($this->name, $this->email, $this->message));
         $this->loading = false;
-        session()->flash('success', 'Message sent successfully');
+        session()->flash('success', 'Mail sent successfully');
         return redirect(url('contacts'));
     }
 }

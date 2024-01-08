@@ -8,26 +8,15 @@ use Spatie\Permission\Models\Role;
 
 class UserSeeder extends Seeder
 {
-    public function run()
+    public function run(): void
     {
-        // Create roles
-        $adminRole = Role::create(['name' => 'admin']);
-        $userRole = Role::create(['name' => 'user']);
+        $adminRole = Role::firstOrCreate(['name' => 'admin']);
 
-        // Create admin user
         $adminUser = User::create([
             'name' => 'Kshitij Dhungana',
-            'email' => 'alzahranepal@gmail.com',
+            'email' => 'admin1@example.com',
             'password' => 'password',
         ]);
         $adminUser->assignRole($adminRole);
-
-        // Create regular user
-        $regularUser = User::create([
-            'name' => 'Regular User',
-            'email' => 'regular@example.com',
-            'password' => 'password',
-        ]);
-        $regularUser->assignRole($userRole);
     }
 }
